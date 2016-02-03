@@ -65,13 +65,36 @@ img {
 <h1>ptb-beta-paper</h1>
 <p>Code to implement simulations and data analyses from “A perturbation method for inference on regularized regression estimates”</p>
 <p>The functions in this code can be used to obtain confidence intervals for regression coefficients from certain regularized regression methods. Please see the article for reference.</p>
-<p>Minnier, J., Tian, L. &amp; Cai, T. (2011), ‘A perturbation method for inference on regularized regression estimates’, Journal of the American Statistical Association 106(496), 1371–1382.</p>
+<p>Minnier, J., Tian, L. &amp; Cai, T. (2011), “A perturbation method for inference on regularized regression estimates”“, Journal of the American Statistical Association 106(496), 1371–1382.</p>
+</div>
+<div id="instructions" class="section level1">
+<h1>Instructions</h1>
+<div id="simulations" class="section level2">
+<h2>Simulations</h2>
+<p>To replicate the simulations, run the files:</p>
+<pre><code>1-run-ResampleALASSO-simulations.R
+2-run-CompressResample-simulations.R
+3-run-Summary-simulations.R</code></pre>
+<p>for various values of <code>paramnum</code> to obtain different settings.</p>
+</div>
+<div id="data-analysis" class="section level2">
+<h2>Data Analysis</h2>
+<p>To replicate the data analysis, run the file:</p>
+<pre><code>ALASSO-HIVexample-May2012.R</code></pre>
+</div>
+<div id="functions" class="section level2">
+<h2>Functions</h2>
+<p>Functions required to implement our methods can be found in the files:</p>
+<pre><code>functions-regression.R
+functions-CIs.R</code></pre>
+<p>The former provides functions to perform adaptive LASSO and perturbation of adaptive LASSO estimates. The latter provides functions to obtain various confidence intervals presented in the paper.</p>
+</div>
 </div>
 <div id="license" class="section level1">
 <h1>License</h1>
 <pre><code>Code to implement simulations and data analyses from 
 &quot;A perturbation method for inference on regularized regression estimates&quot;
-Copyright (C) 2011-2016  Jessica Minnier &lt;minnier-at-ohsu.edu&gt;
+Copyright (C) 2010-2016  Jessica Minnier &lt;minnier-at-ohsu.edu&gt;
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

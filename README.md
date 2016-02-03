@@ -7,15 +7,30 @@ Minnier, J., Tian, L. & Cai, T. (2011), "A perturbation method for inference on 
 
 # Instructions
 
+## Simulations
+
 To replicate the simulations, run the files:
-1-run-ResampleALASSO-simulations.R
-2-run-CompressResample-simulations.R
-3-run-Summary-simulations.R
+
+    1-run-ResampleALASSO-simulations.R
+    2-run-CompressResample-simulations.R
+    3-run-Summary-simulations.R
 
 for various values of `paramnum` to obtain different settings.
 
+## Data Analysis
+
 To replicate the data analysis, run the file:
-ALASSO-HIVexample-May2012.R
+
+    ALASSO-HIVexample-May2012.R
+
+## Functions
+
+Functions required to implement our methods can be found in the files:
+
+    functions-regression.R
+    functions-CIs.R
+
+The former provides functions to perform adaptive LASSO and perturbation of adaptive LASSO estimates. The latter provides functions to obtain various confidence intervals presented in the paper.
 
 # License
 
